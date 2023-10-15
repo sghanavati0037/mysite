@@ -7,9 +7,9 @@
       <div class="about-content col-lg-12">
         <h1 class="text-white">Elements</h1>
         <p class="text-white link-nav">
-          <a href="index.html">Home </a>
+          <a href="{% url 'website:index' %}">Home </a>
           <span class="lnr lnr-arrow-right"></span>
-          <a href="elements.html"> Elements</a>
+          <a href="{% url 'website:elements' %}"> Elements</a>
         </p>
       </div>
     </div>
@@ -460,7 +460,7 @@
           <a href="{% static 'img/elements/g1.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g1.jpg'%})"
+              style="background: url ("{% static 'img/elements/g1.jpg' %}")
             ></div
           ></a>
         </div>
@@ -468,7 +468,7 @@
           <a href="{% static 'img/elements/g2.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g2.jpg'%})"
+              style="background: url('{% static 'img/elements/g2.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -476,7 +476,7 @@
           <a href="{% static 'img/elements/g3.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g3.jpg'%})"
+              style="background: url('{ % static 'img/elements/g3.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -484,7 +484,7 @@
           <a href="{% static 'img/elements/g4.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g4.jpg'%})"
+              style="background: url('{% static 'img/elements/g4.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -492,7 +492,7 @@
           <a href="{% static 'img/elements/g5.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g5.jpg'%})"
+              style="background: url('{% static 'img/elements/g5.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -500,7 +500,7 @@
           <a href="{% static 'img/elements/g6.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g6.jpg'%})"
+              style="background: url('{% static 'img/elements/g6.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -508,7 +508,7 @@
           <a href="{% static 'img/elements/g7.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g7.jpg'%})"
+              style="background: url('{% static 'img/elements/g7.jpg' %}')"
             ></div
           ></a>
         </div>
@@ -516,7 +516,7 @@
           <a href="{% static 'img/elements/g8.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url({%static'img/elements/g8.jpg'%})"
+              style="background: url('{% static 'img/elements/g8.jpg' %}')"
             ></div
           ></a>
         </div>

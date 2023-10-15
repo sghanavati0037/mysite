@@ -6,4 +6,5 @@ def blog_view(request):
     return render(request, 'blog/blog-home.html')
 
 def blog_single(request):
-    return render(request,'blog/blog-single.html')
+    context = {'title':'hello, I am changing this !!'}
+    return render(request,'blog/blog-single.html',context)
